@@ -101,6 +101,8 @@ def calculate_sum_dif(parsed): # - 3 + 4
 			result = op_minus(result,parsed[k+1])
 	return result
 
+print('Enter number -> operation -> number .. and so on.')
+print('Operations to choose from:',OPERATORS)
 parsed = parse_input(input())
 parsed = remove_multiplication_division(parsed)
 print('Result =',calculate_sum_dif(parsed))
